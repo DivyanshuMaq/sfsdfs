@@ -19,7 +19,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="maq-rai-sdk-1",
-    version="0.0.3",
+    version="0.2.0",
     description="RAI Package contains a Prompt Reviewer and Updater and test case generator for faster Copilot Development",
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
@@ -34,22 +34,23 @@ setup(
         "rai_agent_sdk": ["config/*.yaml", "py.typed"],
     },
     install_requires=[
-        "crewai[tools]==0.120.1",
-        "types-PyYAML==6.0.12.20250516",
-        "PyYAML==6.0.2",
-        "onnxruntime==1.22.0",
+        "crewai[tools]>=0.193.0",
+        "types-PyYAML>=6.0.12",
+        "PyYAML>=6.0.0",
+        "onnxruntime>=1.22.0",
     ],
     classifiers=[
-        "Development Status :: 3 - Alpha",
+        "Development Status :: 4 - Beta",
         "Intended Audience :: Developers",
         "Programming Language :: Python :: 3",
         "Programming Language :: Python :: 3.10",
         "Programming Language :: Python :: 3.11", 
         "Programming Language :: Python :: 3.12",
+        "Programming Language :: Python :: 3.13",
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
         "Topic :: Software Development :: Libraries :: Python Modules",
     ],
     keywords=["ai", "copilot", "prompt", "testing", "rai", "agent"],
-    python_requires=">=3.10,<3.13",
+    python_requires=">=3.10,<3.14",
 )
