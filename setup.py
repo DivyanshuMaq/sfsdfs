@@ -26,8 +26,8 @@ setup(
     author="MAQ Software",
     author_email="register@maqsoftware.com",
     url="https://github.com/MAQ-Software-Solutions/maqraisdk",
-    packages=find_packages(where="SDK_Creation"),
-    package_dir={"": "SDK_Creation"},
+    packages=find_packages(where="MAQ_RAI_SDK"),
+    package_dir={"": "MAQ_RAI_SDK"},
     include_package_data=True,
     package_data={
         # Include all yaml files in any config directory under rai_agent_sdk
