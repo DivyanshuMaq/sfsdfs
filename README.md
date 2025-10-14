@@ -1,4 +1,4 @@
-# MAQ RAI SDK 1
+# MAQ RAI SDK
 
 A Python SDK for reviewing and updating prompts, and generating test cases for faster Copilot development with comprehensive Responsible AI (RAI) compliance.
 
@@ -12,7 +12,7 @@ A Python SDK for reviewing and updating prompts, and generating test cases for f
 ## Installation
 
 ```bash
-pip install maq-rai-sdk-1
+pip install maq-rai-sdk
 ```
 
 ## Usage

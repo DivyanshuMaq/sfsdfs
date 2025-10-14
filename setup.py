@@ -1,6 +1,6 @@
 """
-Setup script for the maq-rai-sdk-1 package.
-This script uses setuptools to package the maq-rai-sdk-1 library, which contains modules for faster Copilot Development.
+Setup script for the maq-rai-sdk package.
+This script uses setuptools to package the maq-rai-sdk library, which contains modules for faster Copilot Development.
 Attributes:
     name (str): The name of the package.
     version (str): The current version of the package.
@@ -18,39 +18,38 @@ Attributes:
 from setuptools import setup, find_packages
 
 setup(
-    name="maq-rai-sdk-1",
-    version="0.2.1",
+    name="maq-rai-sdk",
+    version="0.0.0",
     description="RAI Package contains a Prompt Reviewer and Updater and test case generator for faster Copilot Development",
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
     author="MAQ Software",
     author_email="register@maqsoftware.com",
     url="https://github.com/MAQ-Software-Solutions/maqraisdk",
-    packages=find_packages(where="MAQ_RAI_SDK"),
-    package_dir={"": "MAQ_RAI_SDK"},
+    packages=find_packages(where="SDK_Creation"),
+    package_dir={"": "SDK_Creation"},
     include_package_data=True,
     package_data={
         # Include all yaml files in any config directory under rai_agent_sdk
         "rai_agent_sdk": ["config/*.yaml", "py.typed"],
     },
     install_requires=[
-        "crewai[tools]>=0.193.0",
-        "types-PyYAML>=6.0.12",
-        "PyYAML>=6.0.0",
-        "onnxruntime>=1.22.0",
+        "crewai[tools]==0.120.1",
+        "types-PyYAML==6.0.12.20250516",
+        "PyYAML==6.0.2",
+        "onnxruntime==1.22.0",
     ],
     classifiers=[
-        "Development Status :: 4 - Beta",
+        "Development Status :: 3 - Alpha",
         "Intended Audience :: Developers",
         "Programming Language :: Python :: 3",
         "Programming Language :: Python :: 3.10",
         "Programming Language :: Python :: 3.11", 
         "Programming Language :: Python :: 3.12",
-        "Programming Language :: Python :: 3.13",
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
         "Topic :: Software Development :: Libraries :: Python Modules",
     ],
     keywords=["ai", "copilot", "prompt", "testing", "rai", "agent"],
-    python_requires=">=3.10,<3.14",
+    python_requires=">=3.10,<3.13",
 )
