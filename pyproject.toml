@@ -41,7 +41,7 @@ Documentation = "https://github.com/MAQ-Software-Solutions/maqraisdk"
 "Bug Reports" = "https://github.com/MAQ-Software-Solutions/maqraisdk/issues"
 
 [tool.setuptools.packages.find]
-where = ["SDK_Creation"]
+where = ["MAQ_RAI_SDK"]
 
 [tool.setuptools.package-data]
 "rai_agent_sdk" = ["config/*.yaml", "py.typed"]
