@@ -1,6 +1,6 @@
 """
-Setup script for the maq-rai-sdk_v1 package.
-This script uses setuptools to package the maq-rai-sdk_v1 library, which contains modules for faster Copilot Development.
+Setup script for the maq-rai-sdk package.
+This script uses setuptools to package the maq-rai-sdk library, which contains modules for faster Copilot Development.
 Attributes:
     name (str): The name of the package.
     version (str): The current version of the package.
@@ -18,16 +18,16 @@ Attributes:
 from setuptools import setup, find_packages
 
 setup(
-    name="maq-rai-sdk_v1",
-    version="0.0.0",
+    name="maq-rai-sdk",
+    version="0.3.0",
     description="RAI Package contains a Prompt Reviewer and Updater and test case generator for faster Copilot Development",
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
     author="MAQ Software",
-    author_email="register@maqsoftware.com",
+    author_email="customersuccess@maqsoftware.com",
     url="https://github.com/MAQ-Software-Solutions/maqraisdk",
-    packages=find_packages(where="MAQ_RAI_SDK_v1"),
-    package_dir={"": "MAQ_RAI_SDK_v1"},
+    packages=find_packages(where="SDK_Creation"),
+    package_dir={"": "SDK_Creation"},
     include_package_data=True,
     package_data={
         # Include all yaml files in any config directory under rai_agent_sdk
