@@ -30,8 +30,8 @@ setup(
     package_dir={"": "MAQ_RAI_SDK"},
     include_package_data=True,
     package_data={
-        # Include all yaml files in any config directory under rai_agent_sdk
-        "rai_agent_sdk": ["config/*.yaml", "py.typed"],
+        # Include all yaml files in any config directory under maq_rai_sdk
+        "maq_rai_sdk": ["config/*.yaml", "py.typed"],
     },
     install_requires=[
         "crewai[tools]==0.120.1",

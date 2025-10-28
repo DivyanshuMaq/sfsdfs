@@ -44,7 +44,7 @@ Documentation = "https://github.com/MAQ-Software-Solutions/maqraisdk"
 where = ["MAQ_RAI_SDK"]
 
 [tool.setuptools.package-data]
-"rai_agent_sdk" = ["config/*.yaml", "py.typed"]
+"maq_rai_sdk" = ["config/*.yaml", "py.typed"]
 
 [tool.setuptools]
 include-package-data = true
