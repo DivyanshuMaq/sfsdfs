@@ -3,7 +3,7 @@ requires = ["setuptools>=45", "wheel", "setuptools-scm[toml]>=6.2"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "maq-rai-sdk"
+name = "maq-rai-sdk_v1"
 version = "0.0.0"
 description = "RAI Package contains a Prompt Reviewer and Updater and test case generator for faster Copilot Development"
 readme = "README.md"
@@ -41,7 +41,7 @@ Documentation = "https://github.com/MAQ-Software-Solutions/maqraisdk"
 "Bug Reports" = "https://github.com/MAQ-Software-Solutions/maqraisdk/issues"
 
 [tool.setuptools.packages.find]
-where = ["SDK_Creation"]
+where = ["MAQ_RAI_SDK_v1"]
 
 [tool.setuptools.package-data]
 "rai_agent_sdk" = ["config/*.yaml", "py.typed"]

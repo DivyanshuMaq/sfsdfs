@@ -12,7 +12,7 @@ A Python SDK for reviewing and updating prompts, and generating test cases for f
 ## Installation
 
 ```bash
-pip install maq-rai-sdk
+pip install maq-rai-sdk_v1
 ```
 
 ## Usage
