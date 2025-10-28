@@ -3,8 +3,8 @@ requires = ["setuptools>=45", "wheel", "setuptools-scm[toml]>=6.2"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "maq-rai-sdk-testing-package"
-version = "0.3.3"
+name = "maq_rai_sdk_testingv1"
+version = "0.3.4"
 description = "RAI Package contains a Prompt Reviewer and Updater and test case generator for faster Copilot Development"
 readme = "README.md"
 license = {text = "MIT"}
