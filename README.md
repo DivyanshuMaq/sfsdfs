@@ -194,12 +194,10 @@ pip install maq-rai-sdk
 
 ```python
 from maq_rai_sdk import _client
-from azure.core.credentials import AzureKeyCredential
  
 # Initialize the client
-client =  _client.MAQRAISDK(
-    endpoint="<Your function app endpoint>",
-    credential=AzureKeyCredential("your-key")
+client = _client.MAQRAISDK(
+    endpoint="<Your function app endpoint>"
 )
  
 # Review and update a prompt
@@ -256,7 +254,6 @@ print(testcases)
 
 - Python 3.10 or higher (< 3.13)
 - Function app endpoint
-- Function app key
 
 ## API Documentation
 
